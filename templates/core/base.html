@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Website{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/core.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+    $("#submitBtn").click(function() {
+        $.ajax({
+            url: "{% url 'submit_form' %}",
+            type: "POST",
+            data: {
+                csrfmiddlewaretoken: $("input[name=csrfmiddlewaretoken]").val(),
+                user_input: $("#user_input").val(),
+                question_id: $("#question_id").val()
+            },
+            success: function(response) {
+                console.log(JSON.parse(response).data);
+                $("#responseDiv").html(JSON.parse(response).data);
+                $("#score").html(JSON.parse(response).similarity_score);
+            }
+        });
+    });
+    });
+    </script>
+
+</head>
+<body>
+    <header id="head">
+        <nav >
+            Tesd App
+        </nav>
+    </header>
+    <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

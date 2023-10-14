@@ -1,0 +1,23 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+  <h2 id="list_head">{{ question.question_phrase }}</h2>
+  <div id="submit_form_div">
+      <form method="post" action="{% url 'submit_form' %}">
+          {% csrf_token %}
+          <div id="submit_form">
+              <input id="question_id" type="number" value="{{question.question_id}}" name="question_id" style="display: none;">
+              <textarea id="user_input" name="user_input" rows="3" cols="50" required></textarea>
+              <br>
+              <button type="button" id="submitBtn">Submit</button>
+          </div>
+      </form>
+      <div id="response">
+          <h2 id="responseDiv"></h2>
+          <h2 id="score"></h2>
+      </div>
+
+      <a id="" href="{% url 'question_list' %}">Back to Questions List</a>
+  </div>
+
+{% endblock %}

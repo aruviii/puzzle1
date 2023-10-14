@@ -1,0 +1,13 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<div id="list_head"><h2>Questions List</h2></div>
+
+  <ul>
+  {% for question in questions %}
+    <li id="list_item">
+      <a  href="{% url 'view_question' question.question_id %}">{{ question.question_phrase }}</a><br>
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}
