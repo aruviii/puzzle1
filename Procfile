@@ -1,0 +1,1 @@
+web gunicorn puzzle.wsgi:application --log-file -
