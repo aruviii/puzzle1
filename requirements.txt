@@ -1,6 +1,6 @@
 -f https://download.pytorch.org/whl/torch_stable.html
 torch==1.13.0+cpu
-torchvision==0.15.2+cpu
+torchvision
 asgiref==3.7.2
 certifi==2023.7.22
 charset-normalizer==3.3.0
@@ -31,7 +31,6 @@ scipy==1.11.3
 sentence-transformers==2.2.2
 sentencepiece==0.1.99
 sqlparse==0.4.4
-sympy==1.12
 threadpoolctl==3.2.0
 tokenizers==0.14.1
 tqdm==4.66.1
