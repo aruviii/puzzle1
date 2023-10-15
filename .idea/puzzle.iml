@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/puzzle" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sentence-transformers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sentence-transformers/docs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sentence-transformers/examples" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sentence-transformers/sentence_transformers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sentence-transformers/tests" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/staticfiles" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/templates" isTestSource="false" />
+    </content>
     <orderEntry type="jdk" jdkName="Python 3.11 (djangoenv)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

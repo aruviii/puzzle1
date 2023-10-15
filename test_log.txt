@@ -1,5 +1,0 @@
-2023-10-14 12:24:53,069$ [DEBUG]$ This is a debug message
-2023-10-14 12:24:53,071$ [INFO]$ This is an info message
-2023-10-14 12:24:53,071$ [WARNING]$ This is a warning message
-2023-10-14 12:24:53,071$ [ERROR]$ This is an error message
-2023-10-14 12:24:53,071$ [CRITICAL]$ This is a critical message
