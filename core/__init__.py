@@ -1,5 +1,6 @@
 import logging
-
+from sentence_transformers import SentenceTransformer
+model = SentenceTransformer('bert-base-nli-mean-tokens')
 logger = logging.getLogger("my_logger")
 logger.setLevel(logging.DEBUG)
 

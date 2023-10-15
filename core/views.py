@@ -3,13 +3,12 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .models import Questions
 from .forms import AnswerForm
 from django.http import HttpResponse, JsonResponse
-from sentence_transformers import SentenceTransformer
 import json
 from django.db import connection
 from sklearn.metrics.pairwise import cosine_similarity
 from core import logger
+from core import model
 
-model = SentenceTransformer('bert-base-nli-mean-tokens')
 def question_list(request):
     questions = Questions.objects.all()
     return render(request, 'core/question_list.html', {'questions': questions})
