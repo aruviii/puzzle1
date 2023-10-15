@@ -1,5 +1,5 @@
 -f https://download.pytorch.org/whl/torch_stable.html
-torch==1.6.0+cpu
+torch==1.13.0+cpu
 torchvision==0.9.1+cpu
 asgiref==3.7.2
 certifi==2023.7.22
