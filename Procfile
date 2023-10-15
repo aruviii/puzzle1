@@ -1,1 +1,1 @@
-web gunicorn puzzle.wsgi:application --log-file -
+web: gunicorn puzzle.wsgi
